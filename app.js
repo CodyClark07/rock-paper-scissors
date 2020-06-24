@@ -15,8 +15,12 @@ let playerChoices = [
 
 
 function play(playerChoice) {
-    if (playerChoice = 'rock') {
+    let playerChoiceElem = document.getElementById("player-choice");
+    let playerImageElem = document.getElementById("player-choice-image");
 
+    if (playerChoice = 'rock') {
+        playerChoiceElem.innerHTML = playerChoices[0].name
+        playerImageElem.src = playerChoices[0].img
     }
 }
 

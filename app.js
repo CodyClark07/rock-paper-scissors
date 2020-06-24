@@ -18,9 +18,17 @@ function play(playerChoice) {
     let playerChoiceElem = document.getElementById("player-choice");
     let playerImageElem = document.getElementById("player-choice-image");
 
-    if (playerChoice = 'rock') {
+    if (playerChoice == 'rock') {
         playerChoiceElem.innerHTML = playerChoices[0].name
         playerImageElem.src = playerChoices[0].img
+    }
+    else if (playerChoice == 'paper') {
+        playerChoiceElem.innerHTML = playerChoices[1].name
+        playerImageElem.src = playerChoices[1].img
+    }
+    else if (playerChoice == 'scissors') {
+        playerChoiceElem.innerHTML = playerChoices[2].name
+        playerImageElem.src = playerChoices[2].img
     }
 }
 
